@@ -1,12 +1,12 @@
 package com.example.myapplication
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -45,6 +45,8 @@ class MainActivity : AppCompatActivity() {
 
         // Agregar un oyente de clic al enlace de registro
         registerLink.setOnClickListener {
+            val intent = Intent(this, activiy_registro_usuarios::class.java)
+            startActivity(intent)
             // Aquí puedes redirigir al usuario a la actividad de registro o realizar otras acciones relacionadas con el registro.
         }
     }
