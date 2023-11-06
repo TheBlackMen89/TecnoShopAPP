@@ -4,37 +4,24 @@
 
     android:layout_width="match_parent"
 
-    android:layout_height="match_parent">
-
-    <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="110dp"
-        android:ems="10"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:text="Registrarse" />
+    android:layout_height="match_parent"
+    android:background="#E6E6F8">
 
     <EditText
         android:id="@+id/editTextText7"
         android:layout_width="313dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editTextText6"
+        android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="47dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="53dp"
         android:layout_marginEnd="58dp"
-        android:ems="20"
+        android:fontFamily="cursive"
         android:hint="Nombre de usuario"
         android:inputType="text"
-        android:minHeight="48dp" />
+        android:minHeight="52sp"
+        android:textSize="22sp" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -46,21 +33,23 @@
         android:layout_marginStart="47dp"
         android:layout_marginTop="58dp"
         android:layout_marginEnd="55dp"
-        android:ems="10"
+        android:fontFamily="cursive"
         android:hint="Password"
         android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="362dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextText7"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="10dp"
-        android:width="400dp"
-        android:text="Asegúrate de elegir un nombre de usuario apto para todos los públicos. ¡No podrás cambiarlo más tarde y se cerrará cualquier cuenta con un nombre de usuario inapropiado!" />
+        android:layout_marginEnd="27dp"
+        android:fontFamily="serif"
+        android:text="Asegúrate de elegir un nombre de usuario apto para todos los públicos. ¡No podrás cambiarlo más tarde y se cerrará cualquier cuenta con un nombre de usuario inapropiado!"
+        android:textSize="15sp" />
 
     <EditText
         android:id="@+id/editTextText8"
@@ -72,10 +61,11 @@
         android:layout_marginStart="47dp"
         android:layout_marginTop="53dp"
         android:layout_marginEnd="59dp"
-        android:ems="10"
+        android:fontFamily="cursive"
         android:hint="Correo"
         android:inputType="text"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/button"
@@ -87,6 +77,21 @@
         android:layout_marginStart="107dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="112dp"
-        android:text="Registrarse" />
+        android:background="#D89A9A"
+        android:text="Registrarse"
+        android:textColorHint="#C53737"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="287dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="33dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Registro de Usuario"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>
