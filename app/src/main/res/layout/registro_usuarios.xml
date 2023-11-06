@@ -57,8 +57,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/editTextText7"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="46dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="10dp"
         android:width="400dp"
         android:text="Asegúrate de elegir un nombre de usuario apto para todos los públicos. ¡No podrás cambiarlo más tarde y se cerrará cualquier cuenta con un nombre de usuario inapropiado!" />
 
