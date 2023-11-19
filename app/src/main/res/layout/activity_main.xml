@@ -13,8 +13,8 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
-        android:src="@drawable/ic_launcher_foreground"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        android:src="@drawable/pc23"
+        app:srcCompat="@drawable/pc23" />
 
     <EditText
         android:id="@+id/username"
