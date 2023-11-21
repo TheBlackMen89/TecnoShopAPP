@@ -9,13 +9,6 @@ Listado de Productos: La aplicación muestra una lista de productos disponibles 
 
 Carrito de Compras: Los usuarios pueden agregar productos a su carrito de compras y gestionar los artículos seleccionados antes de realizar el pago.
 
-Capturas de Pantalla de nuestra aplicación
-
-![image](https://github.com/DAN7EN/TecnoShopAPP/assets/104392300/5c00e4f8-2731-4bc4-8a5a-31d7dadde1b7)  
-
-![image](https://github.com/DAN7EN/TecnoShopAPP/assets/104392300/f03b6aec-1852-4333-b926-da3fe0f81369)
-
-
 Requisitos de Instalación
 Asegúrate de cumplir con los siguientes requisitos antes de instalar y ejecutar la aplicación:
 
