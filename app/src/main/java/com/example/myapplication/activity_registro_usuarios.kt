@@ -6,6 +6,10 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import java.util.UUID
+
 
 class activiy_registro_usuarios : AppCompatActivity() {
 
@@ -15,6 +19,7 @@ class activiy_registro_usuarios : AppCompatActivity() {
 
         val auth = FirebaseAuth.getInstance()
 
+        var mDatabase = FirebaseDatabase.getInstance().reference
         val usernameEditText = findViewById<EditText>(R.id.editTextText7)
         val passwordEditText = findViewById<EditText>(R.id.editTextTextPassword2)
         val emailEditText = findViewById<EditText>(R.id.editTextText8)
@@ -25,21 +30,27 @@ class activiy_registro_usuarios : AppCompatActivity() {
             val password = passwordEditText.text.toString()
             val email = emailEditText.text.toString()
 
-            auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this) { task ->
-                    if (task.isSuccessful) {
-                        val firebaseUser = auth.currentUser
-                        // Aquí puedes realizar operaciones adicionales si el registro es exitoso
-                    } else {
-                        Toast.makeText(
-                            this,
-                            "Error al registrar usuario: ${task.exception?.message}",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
+            val usuario = Usuario()
+            usuario.setUid(UUID.randomUUID().toString());
+            usuario.setUsuario(username);
+            usuario.setPassword(password);
+            usuario.setCorreo(email);
+
+            mDatabase.child("Usuario").child(usuario.uid).setValue(usuario)
+                .addOnSuccessListener {
+                    // Data successfully written to the database
+                    Toast.makeText(this, "Usuario Registrado", Toast.LENGTH_SHORT).show()
+                    // You can also navigate the user to another activity here if needed
+                }
+                .addOnFailureListener { e ->
+                    // Failed to write data to the database
+                    Toast.makeText(
+                        this,
+                        "El usuario no fue registrado: ${e.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
         }
 
     }
-
 }
