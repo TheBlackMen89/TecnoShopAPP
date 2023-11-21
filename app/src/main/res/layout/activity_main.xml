@@ -45,13 +45,21 @@
         android:text="Iniciar sesión" />
 
     <TextView
+        android:id="@+id/register_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="serif-monospace"
-        android:textSize="16dp"
-        android:text="¿Registrarse?"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:clickable="true"
-        android:id="@+id/register_link" />
+        android:fontFamily="serif-monospace"
+        android:minHeight="48dp"
+        android:text="¿Registrarse?"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/iconomapa"
+        android:layout_width="83dp"
+        android:layout_height="90dp"
+        app:srcCompat="@drawable/icono" />
+
 </LinearLayout>
